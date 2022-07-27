@@ -4,7 +4,7 @@ package factorials;
 public class Runner {
     public static void main(String[] args) {
 
-        factorial(5); //Parameter is the number to find the factorial of
+//        factorial(5); //Parameter is the number to find the factorial of
         reverseFactorial(150); //Parameter is the number to find the reverse factorial of
     }
 
@@ -17,7 +17,7 @@ public class Runner {
         }
     }
 
-    public static void reverseFactorial(int initialNumber) { //Reverse Factorial
+    public static int reverseFactorial(int initialNumber) { //Reverse Factorial
         int reverseFactorial = initialNumber;
         int divider = 2;
 
@@ -32,5 +32,6 @@ public class Runner {
         } else {
             System.out.println(initialNumber + " NONE");
         }
+        return (divider-1);
     }
 }
