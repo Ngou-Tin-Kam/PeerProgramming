@@ -29,9 +29,10 @@ public class Runner {
 
         if (reverseFactorial == 1) {
             System.out.println(initialNumber + " = " + (divider - 1) + "!");
+            return divider - 1;
         } else {
             System.out.println(initialNumber + " NONE");
+            return -1;
         }
-        return (divider-1);
     }
 }
