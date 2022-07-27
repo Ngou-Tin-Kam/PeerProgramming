@@ -12,8 +12,14 @@ public class RunnerTests {
     public void output1() {
 
         Runner rn = new Runner();
-            assertEquals(5,rn.reverseFactorial(120));
+            assertEquals(5, rn.reverseFactorial(120));
 
+    }
+
+    @Test
+    public void notFactorial() {
+        Runner rn = new Runner();
+        assertEquals(-1, rn.reverseFactorial(150));
     }
 
 }
